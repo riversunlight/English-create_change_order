@@ -6,9 +6,6 @@ class Example_sentence
   @@tot = 0
 
   def initialize(en)
-    if en.class != "String"
-      raise '例文データに文字列以外が渡されました'
-    end
     #@ja = ja
     @en = en
   end
