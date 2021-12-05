@@ -4,12 +4,12 @@
 class Example_sentence
   attr_accessor :ja, :en
   @@tot = 0
-  
-  def initialize(ja, en)
-    if ja.class != "String" || en.class != "String"
+
+  def initialize(en)
+    if en.class != "String"
       raise '例文データに文字列以外が渡されました'
     end
-    @ja = ja
+    #@ja = ja
     @en = en
   end
 end
