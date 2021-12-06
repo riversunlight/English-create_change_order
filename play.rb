@@ -53,11 +53,12 @@ class Play
           answer = gets.chop
           num += 1
           if answer.downcase == ex.en.downcase
-            print "正解!"
+            puts "正解!"
             STDIN.raw(&:getc)
             true
           else
-            print "不正解"
+            puts "不正解"
+            puts ex.en
             STDIN.raw(&:getc)
             false
           end
