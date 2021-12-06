@@ -5,8 +5,8 @@ class Example_sentence
   attr_accessor :ja, :en
   @@tot = 0
 
-  def initialize(en)
-    #@ja = ja
+  def initialize(en, ja)
+    @ja = ja
     @en = en
   end
 end

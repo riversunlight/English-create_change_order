@@ -17,7 +17,8 @@ class Play
         while true
           en = f.gets.chomp
           break if en == "-1"
-          @@examples << Example_sentence.new(en)
+          ja = f.gets.chomp
+          @@examples << Example_sentence.new(en, ja)
         end
       end
     end
@@ -39,6 +40,8 @@ class Play
           puts "\e[H\e[2J"
           puts "#{cnt}週目 #{num}問目"
           puts "並び変えてください(大文字小文字は判定に含みません)"
+          puts
+          puts ex.ja
           print "("
           question.each do |word|
             if word == 'I'

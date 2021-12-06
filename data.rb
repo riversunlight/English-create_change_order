@@ -15,10 +15,10 @@ class Data
           en = gets.chomp
           f.puts(en)
           break if en == "-1"
-          #puts "日本語を入力してください"
-          #ja = gets.chomp
-          #puts ja
-          #f.puts(ja)
+          puts "日本語を入力してください"
+          ja = gets.chomp
+          puts ja
+          f.puts(ja)
         end
       end
 
