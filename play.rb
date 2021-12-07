@@ -29,6 +29,7 @@ class Play
       cnt = 1
       while @@examples.size != 0
         num = 1
+        tot = @@examples.size
         @@examples.delete_if do |ex|
           s = ex.en.dup
           last = s[-1]
@@ -38,7 +39,7 @@ class Play
 
           
           puts "\e[H\e[2J"
-          puts "#{cnt}週目 #{num}問目"
+          puts "#{cnt}週目 #{num}/#{tot}問目"
           puts "並び変えてください(大文字小文字は判定に含みません)"
           puts
           puts ex.ja
